@@ -2,7 +2,7 @@ import pandas as pd
 
 
 #import paper links
-papers = pd.read_csv("/Users/christianfang/Documents/GitHub/datascienceprojects/analyzing-mdpi-papers/data/all_papers.csv")
+papers = pd.read_csv("/Users/christianfang/GitHub/analyzing-mdpi-papers/data/all_papers.csv")
 
 #Exclude duplicates
 papers["identifier"] = papers["identifier"].dropna()
@@ -18,4 +18,4 @@ identifiers = '"' + 'https://www.' + identifiers + '"'
 
 #Write identifiers as csv
 identifiers = pd.DataFrame(identifiers)
-identifiers.to_csv("/Users/christianfang/Documents/GitHub/datascienceprojects/analyzing-mdpi-papers/data/identifiers.csv")
+identifiers.to_csv("/Users/christianfang/GitHub/analyzing-mdpi-papers/data/identifiers.csv")
